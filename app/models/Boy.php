@@ -12,7 +12,7 @@ class Boy extends Eloquent {
 	 * Define Relationships
 	 * each boy HAS one girl friend
 	 */
-	public function girlFriend()
+	public function girl_friend()
 	{
 		return $this->hasOne('Girlfriend'); //this matches the Eloquent model
 	}
@@ -20,7 +20,7 @@ class Boy extends Eloquent {
 	/**
 	 * each boy writes many love letters
 	 */
-	public function loveLetter()
+	public function love_letter()
 	{
 		return $this->hasMany('Loveletter');
 	}
